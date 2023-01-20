@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CMProject.Views.PagesView"
+             xmlns:viewmodels="clr-namespace:CMProject.ViewModels"
+             xmlns:models="clr-namespace:CMProject.Models"
+             xmlns:converters="clr-namespace:CMProject.Converters"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Pages"
+             x:DataType="viewmodels:PagesViewModel">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing"
+                                        Command="{Binding AppearingCommand}" />
+    </ContentPage.Behaviors>
+    
+    <ContentPage.Resources>
+        <converters:BoolToBackgroundColor x:Key="BoolToBackgroundColor" />
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="64" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="0"
+                    Orientation="Vertical">
+            <VerticalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center"
+                                       BackgroundColor="{StaticResource Gray600}">
+                    <Label Text="Search: " 
+                           FontSize="Large"
+                           VerticalTextAlignment="Center"/>
+                    <Entry Text="{Binding Search}"
+                           MinimumWidthRequest="100"
+                           FontSize="Large" />
+                </HorizontalStackLayout>
+                <CollectionView ItemsSource="{Binding UserPages}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:UserPage">
+                            <Grid BackgroundColor="{Binding CurrentAndHighlightedPageNrMatch, Converter={StaticResource BoolToBackgroundColor}, ConverterParameter=Grey}">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:PagesViewModel}}, Path=PageTappedCommand}"
+                                                          CommandParameter="{Binding .}" />
+                                </Grid.GestureRecognizers>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding Title}"
+                                        Margin="10, 0, 50, 0"
+                                        VerticalTextAlignment="Center"
+                                        FontSize="Large"
+                                        Grid.Column="0"/>
+                                <ImageButton Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:PagesViewModel}}, Path=GoToPageViewCommand}"
+                                             CommandParameter="{Binding .}"
+                                             Source="pencil_4x.png"
+                                             HorizontalOptions="FillAndExpand"
+                                             Grid.Column="1"
+                                             Margin="5"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </ScrollView>
+        <ScrollView Orientation="Horizontal"
+                    HeightRequest="64"
+                    Grid.Row="1">
+            <HorizontalStackLayout>
+                <ImageButton Source="add_page_4x.png"
+                             Command="{Binding AddPageCommand}" />
+                <ImageButton Source="delete_4x.png"
+                             Command="{Binding DeletePageCommand}" />
+                <ImageButton Source="save_4x.png"
+                             Command="{Binding SaveCommand}" />
+            </HorizontalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:CMProject.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="CMProject.Views.CloudView"
+             Title="CloudView"
+             x:DataType="viewmodels:CloudViewModel">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing"
+                                        Command="{Binding AppearingCommand}"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout Spacing="10">
+        <Label 
+            Text="Cloud Storage"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="Large"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Text="Username: " 
+                   Grid.Column="0"
+                   FontSize="Large"
+                   Margin="10, 0, 0, 0"/>
+            <Entry Text="{Binding Username}" 
+                   MinimumWidthRequest="100"
+                   Grid.Column="1"
+                   BackgroundColor="{StaticResource Gray600}"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Text="Password: "
+                   Grid.Column="0"
+                   FontSize="Large"
+                   Margin="10, 0, 0, 0" />
+            <Entry Text="{Binding Password}"
+                   MinimumWidthRequest="100"
+                   Grid.Column="1"
+                   BackgroundColor="{StaticResource Gray600}" />
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Text="Upload"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Label Text="Download"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Grid.Column="1" />
+            <ImageButton Source="upload_4x.png"
+                         HorizontalOptions="Center" 
+                         Command="{Binding StoreCommand}"
+                         Grid.Row="1"
+                         Grid.Column="0"/>
+            <ImageButton Source="download_4x.png"
+                         HorizontalOptions="Center"
+                         Command="{Binding RetrieveCommand}"
+                         Grid.Row="1"
+                         Grid.Column="1" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

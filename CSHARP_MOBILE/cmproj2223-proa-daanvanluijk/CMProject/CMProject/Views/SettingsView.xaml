@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:CMProject.ViewModels"
+             x:Class="CMProject.Views.SettingsView"
+             Title="SettingsView"
+             x:DataType="viewmodels:SettingsViewModel">
+    <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Remember username and password"
+                   MaximumWidthRequest="200"
+                   FontSize="Large" />
+            <Switch IsToggled="{Binding RememberCredentials}"
+                    Margin="10, 0, 50, 0"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

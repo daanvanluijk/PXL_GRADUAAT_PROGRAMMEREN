@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CMProject.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:CMProject.Views"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="{StaticResource Tertiary}">
+
+    <ShellContent Title="Home"
+                  ContentTemplate="{DataTemplate views:HomeView}"
+                  Route="HomeView" 
+                  Icon="home_4x.png"/>
+    <!--<ShellContent Title="PageView"
+                  ContentTemplate="{DataTemplate views:PageView}"
+                  Route="PageView" />-->
+    
+    <FlyoutItem Title="Pages"
+                Icon="page_4x.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:PagesView}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Cloud Storage"
+                Icon="cloud_4x.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:CloudView}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Settings"
+                Icon="settings_4x.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:SettingsView}" />
+        </Tab>
+    </FlyoutItem>
+</Shell>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CMProject.Views.HomeView"
+             xmlns:viewmodels="clr-namespace:CMProject.ViewModels"
+             xmlns:models="clr-namespace:CMProject.Models"
+             xmlns:converters="clr-namespace:CMProject.Converters"
+             Title="HomeView"
+             x:DataType="viewmodels:HomeViewModel"
+             BackgroundColor="{StaticResource Tertiary}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--<Label Text="IKKEPEDIA"
+               FontSize="Large"
+               Grid.Row="1"
+               HorizontalOptions="Center"
+               TextColor="{StaticResource White}"/>-->
+        <Image Source="logowhite.png"
+               Grid.Row="2"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Center"
+               MinimumWidthRequest="1000"/>
+    </Grid>
+</ContentPage>
