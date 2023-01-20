@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CSWeb1PE.Models.ViewModels.GebruikerViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Gebruiker.Naam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gebruiker.Voornaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gebruiker.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th>
+                Gekozen rol
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gebruiker.Naam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gebruiker.Voornaam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gebruiker.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gebruiker.TijdelijkeRol)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Gebruiker.GebruikerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Gebruiker.GebruikerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Gebruiker.GebruikerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,92 @@
+﻿@model CSWeb1PE.Models.ViewModels.StudentViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Gebruiker</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student.Gebruiker.Naam)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student.Gebruiker.Naam)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student.Gebruiker.Voornaam)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student.Gebruiker.Voornaam)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student.Gebruiker.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student.Gebruiker.Email)
+        </dd>
+    </dl>
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Vakken.First().VakNaam)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Vakken.First().Studiepunten)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Vak vak in Model.Vakken) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => vak.VakNaam)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => vak.Studiepunten)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Handboeken.First().Titel)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Handboeken.First().Kostprijs)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Handboeken.First().UitgifteDatum)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Handboek handboek in Model.Handboeken)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => handboek.Titel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => handboek.Kostprijs)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => handboek.UitgifteDatum)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,49 @@
+﻿@model CSWeb1PE.Models.ViewModels.VakViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Vak</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="VakId" />
+            <div class="form-group">
+                <label asp-for="VakNaam" class="control-label"></label>
+                <input asp-for="VakNaam" class="form-control" />
+                <span asp-validation-for="VakNaam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Studiepunten" class="control-label"></label>
+                <input asp-for="Studiepunten" class="form-control" />
+                <span asp-validation-for="Studiepunten" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Handboek" class="control-label"></label>
+                <select asp-for="Handboek" class="form-control" asp-items="ViewBag.Handboeken"></select>
+                <span asp-validation-for="Handboek" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lector" class="control-label"></label>
+                <select asp-for="Lector" class="form-control" asp-items="ViewBag.Lectoren"></select>
+                <span asp-validation-for="Lector" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

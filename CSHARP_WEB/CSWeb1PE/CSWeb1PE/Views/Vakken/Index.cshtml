@@ -1,0 +1,57 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<CSWeb1PE.Models.ViewModels.VakViewModel>
+
+@inject SignInManager<IdentityUser> signInManager
+@inject UserManager<IdentityUser> userManager
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@if (signInManager.IsSignedIn(User) && await userManager.IsInRoleAsync(await userManager.GetUserAsync(User), "Admin"))
+{
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VakNaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Studiepunten)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Handboek)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VakNaam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Studiepunten)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Handboek)
+            </td>
+    @if (signInManager.IsSignedIn(User) && await userManager.IsInRoleAsync(await userManager.GetUserAsync(User), "Admin"))
+    {
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VakId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VakId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.VakId">Delete</a>
+            </td>
+    }
+        </tr>
+}
+    </tbody>
+</table>

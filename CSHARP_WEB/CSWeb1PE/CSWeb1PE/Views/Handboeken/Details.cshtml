@@ -1,0 +1,42 @@
+﻿@model CSWeb1PE.Models.Handboek
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Handboek</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Titel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Titel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kostprijs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kostprijs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UitgifteDatum)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UitgifteDatum)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Afbeelding)
+        </dt>
+        <dd class = "col-sm-10">
+            <img src="@Model.Afbeelding" height="150" />
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.HandboekId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

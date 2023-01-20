@@ -1,0 +1,73 @@
+﻿@model IEnumerable<CSWeb1PE.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+    List<Student> ModelList = Model.ToList();
+}
+
+<h1>Studenten</h1>
+<div class="col">
+    <label>Zoek: </label>
+    <input type="text" id="search" />
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Gebruiker.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gebruiker.Naam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gebruiker.Voornaam)
+            </th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+        @for (int i = 0; i < ModelList.Count; i++) {
+            <tr id="@string.Concat("dataRow", i)">
+                <td class="emailData">
+                    @Html.DisplayFor(model => ModelList[i].Gebruiker.Email)
+                </td>
+                <td class="naamData">
+                    @Html.DisplayFor(model => ModelList[i].Gebruiker.Naam)
+                </td>
+                <td class="voornaamData">
+                    @Html.DisplayFor(model => ModelList[i].Gebruiker.Voornaam)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@ModelList[i].StudentId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    let modelAmount = @ModelList.Count;
+    let tbody = document.getElementById("tbody");
+    let searchInput = document.getElementById("search");
+
+    const generateRows = function (inputEvent) {
+        let searchText = searchInput.value;
+        for (let i = 0; i < modelAmount; i++) {
+            let row = document.getElementById("dataRow" + i);
+            let emailData = row.getElementsByClassName("emailData")[0];
+            let naamData = row.getElementsByClassName("naamData")[0];
+            let voornaamData = row.getElementsByClassName("voornaamData")[0];
+
+            let doesAnythingMatch = emailData.getElementsByTagName("a")[0].innerHTML.toUpperCase().includes(searchText.toUpperCase())
+                || naamData.innerHTML.toUpperCase().includes(searchText.toUpperCase()) || voornaamData.innerHTML.toUpperCase().includes(searchText.toUpperCase());
+
+            if (!doesAnythingMatch) {
+                row.hidden = true;
+            }
+            else {
+                row.hidden = false;
+            }
+        }
+    }
+
+    searchInput.addEventListener('input', generateRows);
+</script>
