@@ -1,0 +1,39 @@
+table {
+    width: 1000px;
+    border: 20px black solid;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+table * {
+    border: 1px black solid;
+}
+table thead tr:nth-child(1) {
+    background-color: crimson;
+    color: black;
+}
+table thead tr:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+table tbody tr:nth-child(2) {
+    background-color: cadetblue;
+    color: white;
+}
+table tbody tr:nth-child(2n) {
+    background-color: lightblue;
+    color: black;
+}
+table tbody tr:nth-child(2n+1) {
+    background-color: cadetblue;
+    color: white;
+}
+table tbody tr:last-child {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+table tfoot tr {
+    background-color: white;
+    color: black;
+}

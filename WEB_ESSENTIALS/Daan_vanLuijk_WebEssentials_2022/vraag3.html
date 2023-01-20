@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Vraag 3</title>
+    <link rel="stylesheet" href="vraag3.css">
+</head>
+<body>
+<form class="forum" action="mailto:daanvanluijk@student.pxl.be" method="get" enctype="text/plain">
+    <p>Personal information:</p>
+    <div class="main">
+        <div class="first">
+            <label class="titel" for="FirstName">First name:</label>
+            <input class="inputDing" type="text" name="FirstName" id="FirstName">
+            <label class="titel" for="LastName">Last name:</label>
+            <input class="inputDing" type="text" name="LastName" id="LastName">
+            <label class="titel" for="Email">Email:</label>
+            <input class="inputDing" type="text" name="Email" id="Email" required>
+            <label class="titel" for="Birthday">Birthday:</label>
+            <input class="inputDing" type="date" name="Birthday" id="Birthday">
+        </div>
+        <div class="block">
+            <p class="titel">Geslacht</p>
+            <div class="radio">
+                <div class="block">
+                    <input type="radio" name="Geslacht" id="Man" value="Man">
+                    <label for="Man">Man</label>
+                </div>
+                <div class="block">
+                    <input type="radio" name="Geslacht" id="Vrouw" value="Vrouw">
+                    <label for="Vrouw">Vrouw</label>
+                </div>
+                <div class="block">
+                    <input type="radio" name="Geslacht" id="Programmeur" value="Programmeur">
+                    <label for="Programmeur">Programmeur</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>User credentials:</p>
+    <div class="userCred">
+        <label class="titel" for="Username">Username:</label>
+        <input class="inputDing" name="Username" id="Username" required>
+        <label class="titel" for="Password">Password:</label>
+        <input class="inputDing" name="Password" id="Password" required>
+    </div>
+    <input type="submit" value="Submit this form">
+    <input type="reset" value="YEETUS DELETUS!">
+</form>
+</body>
+</html>

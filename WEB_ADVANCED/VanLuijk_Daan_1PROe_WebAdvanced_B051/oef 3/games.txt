@@ -1,0 +1,26 @@
+[
+            {
+                title: 'Elden Ring',
+                description: 'THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.',
+                reviews: [],
+                src: 'eldenring.jpg'
+            },
+            {
+                title: 'Sea of Thieves',
+                description: 'Sea of Thieves offers the essential pirate experience, from sailing and fighting to exploring and looting – everything you need to live the pirate life and become a legend in your own right. With no set roles, you have complete freedom to approach the world, and other players, however you choose.',
+                reviews: [],
+                src: 'sot.jpg'
+            },
+            {
+                title: 'Warhammer 40k: Darktide',
+                description: 'From the developers of the best-selling and award-winning franchise Vermintide, Warhammer 40,000: Darktide is a visceral 4-player co-op action game set in the hive city of Tertium. Fight together with your friends against hordes of enemies in this new Warhammer 40,000 experience.',
+                reviews: [],
+                src: 'darktide.jpg'
+            },
+            {
+                title: 'Hollow Knight',
+                description: 'Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.',
+                reviews: [],
+                src: 'hollowknight.jpg'
+            }
+        ]

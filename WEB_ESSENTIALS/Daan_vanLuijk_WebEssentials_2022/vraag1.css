@@ -1,0 +1,133 @@
+html {
+    margin: 0px;
+    font-family: MBCorpo Text, DaimlerCS-Regular, sans-serif;
+}
+body {
+    background-color: black;
+}
+* {
+    color: white;
+}
+.header1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header1 img:nth-child(1) {
+    height: 30px;
+    margin-right: 25%;
+}
+.header1 p:nth-child(2) {
+    margin-right: 10%;
+}
+.header1 p:first-of-type {
+    margin-top: 0px;
+}
+.buttonSmall {
+    background-color: #272727;
+    margin-top: 0px;
+    border: transparent 3px solid;
+    padding-right: 5px;
+    padding-left: 5px;
+    vertical-align: center;
+    justify-content: center;
+    /* De klassieker */
+    text-decoration-line: none;
+}
+.buttonSmall:active {
+    background-color: red;
+    border: 3px red solid;
+    border-radius: 30px;
+    text-decoration-line: underline;
+}
+.buttonSmall:visited {
+    background-color: coral;
+    color: purple;
+}
+.searchBar {
+    display: flex;
+    background-color: #272727;
+}
+.searchBar p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.searchBar img {
+    height: 30px;
+    vertical-align: center;
+}
+.searchBar input {
+    background-color: #272727;
+    border: none;
+}
+.header2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 30%;
+}
+.header2 p {
+    padding: 10px;
+}
+.header2 p:hover {
+    background-color: white;
+    color: black;
+}
+.banner {
+    background-image: url("assets/mercedes-banner.png");
+    padding-left: 100px;
+    padding-top: 200px;
+    padding-bottom: 250px;
+    background-size: cover;
+}
+.buttonBlue {
+    background: #00abef;
+    display: inline-block;
+    padding: 10px 7px;
+}
+.carContent {
+    width: 100%;
+}
+.carContent img {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+@media screen and (max-width: 1100px){
+    .header1 p:nth-child(2) {
+        margin-right: 0;
+    }
+    .header1 img:nth-child(1) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 950px){
+    .header2 {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .header2 {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        horiz-align: center;
+        width: 100%;
+        /* De klassieker */
+    }
+    .header2 p {
+        width: 100%;
+        border-bottom: 3px solid #272727;
+    }
+    .header1 p:nth-child(2) {
+        display: none;
+    }
+    .carContent img {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+}

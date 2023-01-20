@@ -1,0 +1,101 @@
+VideoGameId;Rank;ImageSource;Title;ReleaseYear;SingleplayerOnly;GeekRating;AverageRating;NumVoters
+1;15;The_Last_of_Us.png;The Last of Us;2013;FALSE;8.257;8.77;357
+2;20;System_Shock_2.png;System Shock 2;1999;FALSE;8.169;8.59;283
+3;81;The_Legend_of_Zelda_Link's_Awakening_(1993).png;The Legend of Zelda: Link's Awakening (1993);1993;TRUE;7.77;8.15;350
+4;17;Super_Mario_World.png;Super Mario World;1990;FALSE;8.219;8.46;865
+5;74;Star_Wars_TIE_Fighter.png;Star Wars: TIE Fighter;1994;TRUE;7.82;8.26;270
+6;83;Dragon_Age_Origins.png;Dragon Age: Origins;2009;TRUE;7.755;7.90;939
+7;63;StarCraft.png;StarCraft;1998;FALSE;7.902;8.10;1047
+8;26;Civilization.png;Civilization;1991;TRUE;8.119;8.44;543
+9;87;Assassin's_Creed_II.png;Assassin's Creed II;2009;TRUE;7.739;7.92;669
+10;28;Civilization_IV_Beyond_the_Sword.png;Civilization IV: Beyond the Sword;2007;FALSE;8.118;8.45;382
+11;54;Shin_Megami_Tensei_Persona_4.png;Shin Megami Tensei: Persona 4;2008;TRUE;7.952;8.69;147
+12;71;XCOM_Enemy_Within.png;XCOM: Enemy Within;2013;FALSE;7.829;8.59;150
+13;33;Batman_Arkham_Asylum.png;Batman: Arkham Asylum;2009;TRUE;8.078;8.24;950
+14;27;Civilization_IV.png;Civilization IV;2005;FALSE;8.119;8.35;892
+15;98;GoldenEye_007.png;GoldenEye 007;1997;FALSE;7.686;7.93;578
+16;62;BioShock.png;BioShock;2007;TRUE;7.902;8.05;1055
+17;93;Warcraft_III_The_Frozen_Throne.png;Warcraft III: The Frozen Throne;2003;FALSE;7.697;7.95;526
+18;34;StarCraft_Brood_War.png;StarCraft: Brood War;1998;FALSE;8.072;8.34;643
+19;56;The_Legend_of_Zelda_The_Wind_Waker.png;The Legend of Zelda: The Wind Waker;2002;FALSE;7.937;8.26;570
+20;67;Mario_Kart_8.png;Mario Kart 8;2014;FALSE;7.844;8.34;241
+21;60;Sid_Meier's_Alpha_Centauri.png;Sid Meier's Alpha Centauri;1999;FALSE;7.91;8.28;495
+22;84;The_Legend_of_Zelda_A_Link_Between_Worlds.png;The Legend of Zelda: A Link Between Worlds;2013;TRUE;7.754;8.54;130
+23;3;The_Legend_of_Zelda_A_Link_to_the_Past.png;The Legend of Zelda: A Link to the Past;1991;TRUE;8.543;8.80;951
+24;59;Super_Mario_Galaxy.png;Super Mario Galaxy;2007;FALSE;7.919;8.18;667
+25;100;Uncharted_3_Drake's_Deception.png;Uncharted 3: Drake's Deception;2011;FALSE;7.675;8.10;267
+26;79;Super_Smash_Bros._Melee.png;Super Smash Bros. Melee;2001;FALSE;7.79;8.09;424
+27;38;Shadow_of_the_Colossus_(2005).png;Shadow of the Colossus (2005);2005;TRUE;8.057;8.41;466
+28;14;The_Elder_Scrolls_V_Skyrim.png;The Elder Scrolls V: Skyrim;2011;TRUE;8.294;8.50;1123
+29;35;Red_Dead_Redemption.png;Red Dead Redemption;2010;FALSE;8.072;8.32;762
+30;57;Baldur's_Gate_II_Throne_of_Bhaal.png;Baldur's Gate II: Throne of Bhaal;2001;FALSE;7.935;8.31;370
+31;25;Star_Control_II.png;Star Control II;1992;FALSE;8.136;8.77;224
+32;85;Silent_Hill_2.png;Silent Hill 2;2001;TRUE;7.748;8.32;194
+33;40;Monkey_Island_2_LeChuck's_Revenge.png;Monkey Island 2: LeChuck's Revenge;1991;TRUE;8.051;8.37;493
+34;9;Mass_Effect_2.png;Mass Effect 2;2010;TRUE;8.408;8.61;1075
+35;8;Super_Metroid.png;Super Metroid;1994;TRUE;8.436;8.76;523
+36;75;Red_Dead_Redemption_II.png;Red Dead Redemption II;2018;TRUE;7.817;8.75;121
+37;4;Chrono_Trigger.png;Chrono Trigger;1995;TRUE;8.501;8.83;677
+38;47;Batman_Arkham_City.png;Batman: Arkham City;2011;TRUE;7.988;8.22;550
+39;51;Master_of_Magic.png;Master of Magic;1994;TRUE;7.969;8.61;243
+40;65;Indiana_Jones_and_the_Fate_of_Atlantis.png;Indiana Jones and the Fate of Atlantis;1992;TRUE;7.865;8.28;282
+41;90;Paper_Mario_The_Thousand-Year_Door.png;Paper Mario: The Thousand-Year Door;2004;TRUE;7.726;8.24;201
+42;76;Horizon_Zero_Dawn.png;Horizon Zero Dawn;2017;TRUE;7.811;8.61;156
+43;41;Super_Mario_Odyssey.png;Super Mario Odyssey;2017;FALSE;8.044;8.64;193
+44;77;Metroid_Prime.png;Metroid Prime;2002;TRUE;7.805;8.16;351
+45;23;Star_Wars_Knights_of_the_Old_Republic.png;Star Wars: Knights of the Old Republic;2003;TRUE;8.148;8.33;856
+46;10;Baldur's_Gate_II_Shadows_of_Amn.png;Baldur's Gate II: Shadows of Amn;2000;FALSE;8.356;8.64;669
+47;2;The_Legend_of_Zelda_Breath_of_the_Wild.png;The Legend of Zelda: Breath of the Wild;2017;TRUE;8.576;9.10;338
+48;21;Castlevania_Symphony_of_the_Night.png;Castlevania: Symphony of the Night;1997;TRUE;8.167;8.58;367
+49;96;Secret_of_Mana_(1993).png;Secret of Mana (1993);1993;FALSE;7.691;8.07;352
+50;72;Baldur's_Gate.png;Baldur's Gate;1998;TRUE;7.827;8.07;752
+51;95;Grim_Fandango.png;Grim Fandango;1998;TRUE;7.693;8.03;368
+52;46;Final_Fantasy_Tactics.png;Final Fantasy Tactics;1997;TRUE;7.999;8.32;480
+53;88;Rock_Band_2.png;Rock Band 2;2008;FALSE;7.729;7.97;447
+54;19;Fallout_2.png;Fallout 2;1998;TRUE;8.188;8.48;568
+55;31;Heroes_of_Might_and_Magic_III_The_Restoration_of_Erathia.png;Heroes of Might and Magic III: The Restoration of Erathia;1999;FALSE;8.089;8.47;432
+56;53;Fallout_New_Vegas.png;Fallout: New Vegas;2010;TRUE;7.952;8.19;624
+57;5;The_Witcher_3_Wild_Hunt.png;The Witcher 3: Wild Hunt;2015;TRUE;8.45;8.91;351
+58;91;The_Legend_of_Zelda.png;The Legend of Zelda;1986;TRUE;7.705;7.97;626
+59;42;Metal_Gear_Solid.png;Metal Gear Solid;1998;TRUE;8.039;8.35;497
+60;78;Civilization_V.png;Civilization V;2010;FALSE;7.794;7.99;769
+61;86;The_Legend_of_Zelda_Majora's_Mask.png;The Legend of Zelda: Majora's Mask;2000;TRUE;7.747;8.13;374
+62;13;Final_Fantasy_VI.png;Final Fantasy VI;1994;FALSE;8.33;8.70;505
+63;82;Civilization_V_Brave_New_World.png;Civilization V: Brave New World;2013;TRUE;7.759;8.35;174
+64;11;Planescape_Torment.png;Planescape: Torment;1999;TRUE;8.345;8.67;505
+65;12;X-COM_UFO_Defense.png;X-COM: UFO Defense;1994;TRUE;8.343;8.68;626
+66;45;Mass_Effect.png;Mass Effect;2007;TRUE;8.015;8.16;1077
+67;66;HALF-LIFE2_Episode_Two.png;HλLF-LIFE²: Episode Two;2007;TRUE;7.862;8.21;331
+68;55;HALF-LIFE.png;HλLF-LIFE;1998;TRUE;7.941;8.15;814
+69;70;Mass_Effect_3.png;Mass Effect 3;2012;FALSE;7.837;8.07;492
+70;24;Maniac_Mansion_Day_of_the_Tentacle.png;Maniac Mansion: Day of the Tentacle;1993;TRUE;8.146;8.46;426
+71;39;The_Secret_of_Monkey_Island.png;The Secret of Monkey Island;1990;TRUE;8.052;8.33;659
+72;61;StarCraft_II_Wings_of_Liberty.png;StarCraft II: Wings of Liberty;2010;FALSE;7.903;8.20;605
+73;49;Super_Mario_Galaxy_2.png;Super Mario Galaxy 2;2010;FALSE;7.977;8.43;335
+74;69;The_Curse_of_Monkey_Island.png;The Curse of Monkey Island;1997;TRUE;7.838;8.23;326
+75;16;Civilization_II.png;Civilization II;1996;FALSE;8.221;8.50;722
+76;22;Uncharted_2_Among_Thieves.png;Uncharted 2: Among Thieves;2009;FALSE;8.155;8.50;478
+77;18;Master_of_Orion_II_Battle_at_Antares.png;Master of Orion II: Battle at Antares;1996;FALSE;8.214;8.65;382
+78;1;Portal_2.png;Portal 2;2011;FALSE;8.615;8.83;1132
+79;52;Metal_Gear_Solid_3_Snake_Eater.png;Metal Gear Solid 3: Snake Eater;2004;TRUE;7.96;8.46;224
+80;30;Final_Fantasy_VII.png;Final Fantasy VII;1997;TRUE;8.097;8.34;934
+81;48;Fallout_(1997).png;Fallout (1997);1997;TRUE;7.978;8.26;620
+82;58;Fallout_3.png;Fallout 3;2008;TRUE;7.928;8.09;1246
+83;7;The_Legend_of_Zelda_Ocarina_of_Time.png;The Legend of Zelda: Ocarina of Time;1998;TRUE;8.438;8.70;953
+84;6;Portal_(2007).png;Portal (2007);2007;TRUE;8.442;8.62;1545
+85;80;Master_of_Orion.png;Master of Orion;1993;TRUE;7.774;8.24;255
+86;64;Grand_Theft_Auto_V.png;Grand Theft Auto V;2013;FALSE;7.869;8.24;350
+87;37;HALF-LIFE2.png;HλLF-LIFE²;2004;TRUE;8.064;8.27;903
+88;99;Final_Fantasy_IX.png;Final Fantasy IX;2000;TRUE;7.683;7.95;414
+89;50;Resident_Evil_4.png;Resident Evil 4;2005;TRUE;7.973;8.22;502
+90;36;Deus_Ex.png;Deus Ex;2000;FALSE;8.07;8.39;501
+91;89;Valkyria_Chronicles.png;Valkyria Chronicles;2008;TRUE;7.727;8.20;247
+92;97;The_Legend_of_Zelda_Twilight_Princess.png;The Legend of Zelda: Twilight Princess;2006;TRUE;7.689;7.97;581
+93;73;Hollow_Knight.png;Hollow Knight;2017;TRUE;7.82;8.74;136
+94;68;Diablo_II.png;Diablo II;2000;TRUE;7.84;8.02;1016
+95;32;XCOM_Enemy_Unknown.png;XCOM: Enemy Unknown;2012;FALSE;8.079;8.37;569
+96;94;Mega_Man_2.png;Mega Man 2;1988;TRUE;7.696;8.05;323
+97;43;Diablo_II_Lord_of_Destruction.png;Diablo II: Lord of Destruction;2001;FALSE;8.027;8.24;770
+98;92;Hades.png;Hades;2020;TRUE;7.7;9.09;69
+99;44;Super_Mario_64.png;Super Mario 64;1996;TRUE;8.026;8.25;717
+100;29;Super_Mario_Bros._3.png;Super Mario Bros. 3;1988;FALSE;8.102;8.32;919

@@ -1,0 +1,187 @@
+﻿<Window x:Class="ExamenSem2.OverviewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamenSem2"
+        mc:Ignorable="d"
+        Title="OverviewWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+        <TextBlock Name="TextBlockGameName"
+                   FontSize="40"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontWeight="Bold"
+                   Foreground="#94ca3f">
+            Game Name</TextBlock>
+        <Image Source="images/boardgames.png"
+               HorizontalAlignment="Right"
+               Margin="10"></Image>
+        <TabControl Grid.Row="1"
+                    Background="#59abdf">
+            <TabItem Header="Board Games">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <DataGrid Name="DataGridBoardGames"
+                              Margin="20"
+                              IsReadOnly="True"
+                              SelectionMode="Single"
+                              Grid.RowSpan="5"
+                              SelectionChanged="DataGridBoardGames_SelectionChanged">
+                    </DataGrid>
+                    <Image Name="ImageBoardGame"
+                           Grid.Column="1"
+                           Grid.RowSpan="2"
+                           Margin="20"></Image>
+                    <StackPanel Margin="20 20 20 0"
+                                Grid.Column="2">
+                        <TextBlock>Amazon</TextBlock>
+                        <TextBlock Name="TextBlockBoardGameAmazonPrice">€0,00</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Margin="20 20 20 0"
+                                Grid.Column="2"
+                                Grid.Row="1">
+                        <TextBlock>Geek Game Shop</TextBlock>
+                        <TextBlock Name="TextBlockBoardGameGeekGameShopPrice">€0,00</TextBlock>
+                    </StackPanel>
+                    <Button Margin="20"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Click="Top10_Button_Click">Top 10</Button>
+                    <Button Margin="20"
+                            Grid.Row="2"
+                            Grid.Column="2"
+                            Click="Under50_Button_Click">Under €50.00</Button>
+                    <Button Margin="20"
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            Click="Post2015Filter_Button_Click">Post 2015</Button>
+                    <Button Margin="20"
+                            Grid.Row="3"
+                            Grid.Column="2"
+                            Click="ResetFilter_Button_Click">Reset</Button>
+                    <Button Margin="20"
+                            Grid.Row="4"
+                            Grid.Column="1"
+                            Click="ExportXML_Button_Click"
+                            Content="Export XML" />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Video Games">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="37*" />
+                        <ColumnDefinition Width="226*" />
+                        <ColumnDefinition Width="131*" />
+                        <ColumnDefinition Width="131*" />
+                        <ColumnDefinition Width="131*" />
+                        <ColumnDefinition Width="131*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <ListBox Name="ListBoxVideoGames"
+                             Grid.RowSpan="5"
+                             Margin="20,20,20.2,20"
+                             SelectionMode="Single"
+                             SelectionChanged="ListBoxVideoGames_SelectionChanged"
+                             Grid.ColumnSpan="2">
+                    </ListBox>
+
+                    <Image Name="ImageVideoGame"
+                           Grid.Column="2"
+                           Grid.RowSpan="2"
+                           Margin="19.8,20,20.4,20.2"></Image>
+                    <TextBlock Margin="20.4,20.4,18.8,19.2"
+                               Grid.Column="4"
+                               Grid.Row="1"
+                               FontSize="20">Year</TextBlock>
+                    <TextBlock Name="TextBlockYear"
+                               Grid.Column="5"
+                               Grid.Row="1"
+                               Margin="20.2,20.4,19,19.2"
+                               FontSize="20"></TextBlock>
+                    <TextBlock Margin="19.8,19.8,19.4,19.8"
+                               Grid.Column="2"
+                               Grid.Row="2"
+                               FontSize="20">Geek Rating</TextBlock>
+                    <TextBlock Name="TextBlockGeekRating"
+                               Grid.Column="3"
+                               Grid.Row="2"
+                               Margin="19.6,19.8"
+                               FontSize="20"></TextBlock>
+                    <TextBlock Margin="20.4,19.8,18.8,19.8"
+                               Grid.Column="4"
+                               Grid.Row="2"
+                               FontSize="20">Average Rating</TextBlock>
+                    <TextBlock Name="TextBlockAvgRating"
+                               Grid.Column="5"
+                               Grid.Row="2"
+                               Margin="20.2,19.8,19,19.8"
+                               FontSize="20"></TextBlock>
+                    <TextBlock Margin="19.8,20.2,19.4,19.4"
+                               Grid.Column="2"
+                               Grid.Row="3"
+                               FontSize="20">Voters</TextBlock>
+                    <TextBlock Name="TextBlockNumberOfVoters"
+                               Grid.Column="3"
+                               Grid.Row="3"
+                               Margin="19.6,20.2,19.6,19.4"
+                               FontSize="20"></TextBlock>
+                    <TextBlock Margin="20.4,20.2,18.8,19.4"
+                               Grid.Column="4"
+                               Grid.Row="3"
+                               FontSize="20">Mode</TextBlock>
+                    <TextBlock Name="TextBlockGameMode"
+                               Grid.Column="5"
+                               Grid.Row="3"
+                               Margin="20.2,20.2,19,19.4"
+                               FontSize="20"></TextBlock>
+                    <TextBlock Margin="19.8,19.6,19.4,20"
+                               Grid.Column="2"
+                               Grid.Row="4"
+                               FontSize="20">Amazon Price</TextBlock>
+                    <TextBlock Name="TextBlockVideoGameAmazonPrice"
+                               Grid.Column="3"
+                               Grid.Row="4"
+                               Margin="19.6,19.6,19.6,20"
+                               FontSize="20"></TextBlock>
+                    <TextBlock Margin="20.4,19.6,18.8,20"
+                               Grid.Column="4"
+                               Grid.Row="4"
+                               FontSize="20">Game Shop Price</TextBlock>
+                    <TextBlock Name="TextBlockVideoGameGeekGameShopPrice"
+                               Grid.Column="5"
+                               Grid.Row="4"
+                               Margin="20.2,19.6,19,20"
+                               FontSize="20"></TextBlock>
+
+                </Grid>
+
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

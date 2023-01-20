@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B84A687C-17D3-4495-9987-E4D06559EFCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ExamenSem2</RootNamespace>
+    <AssemblyName>ExamenSem2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="OverviewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OverviewWindow.xaml.cs">
+      <DependentUpon>OverviewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="csv\BoardGames.csv" />
+    <None Include="csv\VideoGames.csv" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\boardgames.png" />
+    <Resource Include="images\boardgames\7_Wonders.jpg" />
+    <Resource Include="images\boardgames\7_Wonders_Duel.jpg" />
+    <Resource Include="images\boardgames\Aeon%27s_End.jpg" />
+    <Resource Include="images\boardgames\Agricola.jpg" />
+    <Resource Include="images\boardgames\Agricola_%28Revised_Edition%29.jpg" />
+    <Resource Include="images\boardgames\Anachrony.jpg" />
+    <Resource Include="images\boardgames\Android_Netrunner.jpg" />
+    <Resource Include="images\boardgames\Architects_of_the_West_Kingdom.png" />
+    <Resource Include="images\boardgames\Arkham_Horror_The_Card_Game.jpg" />
+    <Resource Include="images\boardgames\Ark_Nova.jpg" />
+    <Resource Include="images\boardgames\Azul.jpg" />
+    <Resource Include="images\boardgames\A_Feast_for_Odin.png" />
+    <Resource Include="images\boardgames\Barrage.png" />
+    <Resource Include="images\boardgames\Battlestar_Galactica_The_Board_Game.jpg" />
+    <Resource Include="images\boardgames\Blood_Rage.jpg" />
+    <Resource Include="images\boardgames\Brass_Birmingham.jpg" />
+    <Resource Include="images\boardgames\Brass_Lancashire.jpg" />
+    <Resource Include="images\boardgames\Cascadia.jpg" />
+    <Resource Include="images\boardgames\Caverna_The_Cave_Farmers.jpg" />
+    <Resource Include="images\boardgames\Caylus.jpg" />
+    <Resource Include="images\boardgames\Clank!_A_Deck-Building_Adventure.jpg" />
+    <Resource Include="images\boardgames\Clank!_Legacy_Acquisitions_Incorporated.png" />
+    <Resource Include="images\boardgames\Clans_of_Caledonia.png" />
+    <Resource Include="images\boardgames\Concordia.jpg" />
+    <Resource Include="images\boardgames\Crokinole.jpg" />
+    <Resource Include="images\boardgames\Dominant_Species.jpg" />
+    <Resource Include="images\boardgames\Dominion_Intrigue.jpg" />
+    <Resource Include="images\boardgames\Dune_Imperium.jpg" />
+    <Resource Include="images\boardgames\Eclipse.jpg" />
+    <Resource Include="images\boardgames\Eclipse_Second_Dawn_for_the_Galaxy.jpg" />
+    <Resource Include="images\boardgames\Eldritch_Horror.jpg" />
+    <Resource Include="images\boardgames\El_Grande.png" />
+    <Resource Include="images\boardgames\Everdell.png" />
+    <Resource Include="images\boardgames\Fields_of_Arle.png" />
+    <Resource Include="images\boardgames\Five_Tribes.jpg" />
+    <Resource Include="images\boardgames\Food_Chain_Magnate.png" />
+    <Resource Include="images\boardgames\Gaia_Project.png" />
+    <Resource Include="images\boardgames\Gloomhaven.jpg" />
+    <Resource Include="images\boardgames\Gloomhaven_Jaws_of_the_Lion.jpg" />
+    <Resource Include="images\boardgames\Grand_Austria_Hotel.jpg" />
+    <Resource Include="images\boardgames\Great_Western_Trail.jpg" />
+    <Resource Include="images\boardgames\Kanban_EV.jpg" />
+    <Resource Include="images\boardgames\Keyflower.jpg" />
+    <Resource Include="images\boardgames\Kingdom_Death_Monster.jpg" />
+    <Resource Include="images\boardgames\Le_Havre.jpg" />
+    <Resource Include="images\boardgames\Lisboa.jpg" />
+    <Resource Include="images\boardgames\Lords_of_Waterdeep.jpg" />
+    <Resource Include="images\boardgames\Lorenzo_il_Magnifico.jpg" />
+    <Resource Include="images\boardgames\Lost_Ruins_of_Arnak.jpg" />
+    <Resource Include="images\boardgames\Mage_Knight_Board_Game.jpg" />
+    <Resource Include="images\boardgames\Mansions_of_Madness_Second_Edition.jpg" />
+    <Resource Include="images\boardgames\Maracaibo.jpg" />
+    <Resource Include="images\boardgames\Marvel_Champions_The_Card_Game.jpg" />
+    <Resource Include="images\boardgames\Mechs_vs._Minions.jpg" />
+    <Resource Include="images\boardgames\Mombasa.jpg" />
+    <Resource Include="images\boardgames\Nemesis.jpg" />
+    <Resource Include="images\boardgames\On_Mars.jpg" />
+    <Resource Include="images\boardgames\Orleans.jpg" />
+    <Resource Include="images\boardgames\Paladins_of_the_West_Kingdom.png" />
+    <Resource Include="images\boardgames\Pandemic_Legacy_Season_0.jpg" />
+    <Resource Include="images\boardgames\Pandemic_Legacy_Season_1.png" />
+    <Resource Include="images\boardgames\Pandemic_Legacy_Season_2.jpg" />
+    <Resource Include="images\boardgames\Patchwork.jpg" />
+    <Resource Include="images\boardgames\Pax_Pamir_Second_Edition.png" />
+    <Resource Include="images\boardgames\Power_Grid.jpg" />
+    <Resource Include="images\boardgames\Puerto_Rico.jpg" />
+    <Resource Include="images\boardgames\Race_for_the_Galaxy.jpg" />
+    <Resource Include="images\boardgames\Raiders_of_the_North_Sea.jpg" />
+    <Resource Include="images\boardgames\Rising_Sun.jpg" />
+    <Resource Include="images\boardgames\Robinson_Crusoe_Adventures_on_the_Cursed_Island.jpg" />
+    <Resource Include="images\boardgames\Root.jpg" />
+    <Resource Include="images\boardgames\Scythe.jpg" />
+    <Resource Include="images\boardgames\Spirit_Island.png" />
+    <Resource Include="images\boardgames\Star_Wars_Imperial_Assault.jpg" />
+    <Resource Include="images\boardgames\Star_Wars_Rebellion.jpg" />
+    <Resource Include="images\boardgames\Tainted_Grail_The_Fall_of_Avalon.jpg" />
+    <Resource Include="images\boardgames\Teotihuacan_City_of_Gods.jpg" />
+    <Resource Include="images\boardgames\Terraforming_Mars.jpg" />
+    <Resource Include="images\boardgames\Terra_Mystica.jpg" />
+    <Resource Include="images\boardgames\The_7th_Continent.jpg" />
+    <Resource Include="images\boardgames\The_Castles_of_Burgundy.jpg" />
+    <Resource Include="images\boardgames\The_Crew_Mission_Deep_Sea.jpg" />
+    <Resource Include="images\boardgames\The_Crew_The_Quest_for_Planet_Nine.jpg" />
+    <Resource Include="images\boardgames\The_Gallerist.png" />
+    <Resource Include="images\boardgames\The_Lord_of_the_Rings_Journeys_in_Middle-Earth.jpg" />
+    <Resource Include="images\boardgames\The_Quacks_of_Quedlinburg.png" />
+    <Resource Include="images\boardgames\The_Voyages_of_Marco_Polo.png" />
+    <Resource Include="images\boardgames\Through_the_Ages_A_New_Story_of_Civilization.jpg" />
+    <Resource Include="images\boardgames\Through_the_Ages_A_Story_of_Civilization.jpg" />
+    <Resource Include="images\boardgames\Tigris_&amp;_Euphrates.jpg" />
+    <Resource Include="images\boardgames\Too_Many_Bones.png" />
+    <Resource Include="images\boardgames\Troyes.jpg" />
+    <Resource Include="images\boardgames\Twilight_Imperium_Fourth_Edition.jpg" />
+    <Resource Include="images\boardgames\Twilight_Imperium_Third_Edition.jpg" />
+    <Resource Include="images\boardgames\Twilight_Struggle.jpg" />
+    <Resource Include="images\boardgames\Tzolk%27in_The_Mayan_Calendar.jpg" />
+    <Resource Include="images\boardgames\Underwater_Cities.png" />
+    <Resource Include="images\boardgames\Viticulture_Essential_Edition.jpg" />
+    <Resource Include="images\boardgames\War_of_the_Ring_Second_Edition.jpg" />
+    <Resource Include="images\boardgames\Wingspan.jpg" />
+    <Resource Include="images\icon.png" />
+    <Resource Include="images\videogames\Assassin%27s_Creed_II.png" />
+    <Resource Include="images\videogames\Baldur%27s_Gate.png" />
+    <Resource Include="images\videogames\Baldur%27s_Gate_II_Shadows_of_Amn.png" />
+    <Resource Include="images\videogames\Baldur%27s_Gate_II_Throne_of_Bhaal.png" />
+    <Resource Include="images\videogames\Batman_Arkham_Asylum.png" />
+    <Resource Include="images\videogames\Batman_Arkham_City.png" />
+    <Resource Include="images\videogames\BioShock.png" />
+    <Resource Include="images\videogames\Castlevania_Symphony_of_the_Night.png" />
+    <Resource Include="images\videogames\Chrono_Trigger.png" />
+    <Resource Include="images\videogames\Civilization.png" />
+    <Resource Include="images\videogames\Civilization_II.png" />
+    <Resource Include="images\videogames\Civilization_IV.png" />
+    <Resource Include="images\videogames\Civilization_IV_Beyond_the_Sword.png" />
+    <Resource Include="images\videogames\Civilization_V.png" />
+    <Resource Include="images\videogames\Civilization_V_Brave_New_World.png" />
+    <Resource Include="images\videogames\Deus_Ex.png" />
+    <Resource Include="images\videogames\Diablo_II.png" />
+    <Resource Include="images\videogames\Diablo_II_Lord_of_Destruction.png" />
+    <Resource Include="images\videogames\Dragon_Age_Origins.png" />
+    <Resource Include="images\videogames\Fallout_%281997%29.png" />
+    <Resource Include="images\videogames\Fallout_2.png" />
+    <Resource Include="images\videogames\Fallout_3.png" />
+    <Resource Include="images\videogames\Fallout_New_Vegas.png" />
+    <Resource Include="images\videogames\Final_Fantasy_IX.png" />
+    <Resource Include="images\videogames\Final_Fantasy_Tactics.png" />
+    <Resource Include="images\videogames\Final_Fantasy_VI.png" />
+    <Resource Include="images\videogames\Final_Fantasy_VII.png" />
+    <Resource Include="images\videogames\GoldenEye_007.png" />
+    <Resource Include="images\videogames\Grand_Theft_Auto_V.png" />
+    <Resource Include="images\videogames\Grim_Fandango.png" />
+    <Resource Include="images\videogames\Hades.png" />
+    <Resource Include="images\videogames\HALF-LIFE.png" />
+    <Resource Include="images\videogames\HALF-LIFE2.png" />
+    <Resource Include="images\videogames\HALF-LIFE2_Episode_Two.png" />
+    <Resource Include="images\videogames\Heroes_of_Might_and_Magic_III_The_Restoration_of_Erathia.png" />
+    <Resource Include="images\videogames\Hollow_Knight.png" />
+    <Resource Include="images\videogames\Horizon_Zero_Dawn.png" />
+    <Resource Include="images\videogames\Indiana_Jones_and_the_Fate_of_Atlantis.png" />
+    <Resource Include="images\videogames\Maniac_Mansion_Day_of_the_Tentacle.png" />
+    <Resource Include="images\videogames\Mario_Kart_8.png" />
+    <Resource Include="images\videogames\Mass_Effect.png" />
+    <Resource Include="images\videogames\Mass_Effect_2.png" />
+    <Resource Include="images\videogames\Mass_Effect_3.png" />
+    <Resource Include="images\videogames\Master_of_Magic.png" />
+    <Resource Include="images\videogames\Master_of_Orion.png" />
+    <Resource Include="images\videogames\Master_of_Orion_II_Battle_at_Antares.png" />
+    <Resource Include="images\videogames\Mega_Man_2.png" />
+    <Resource Include="images\videogames\Metal_Gear_Solid.png" />
+    <Resource Include="images\videogames\Metal_Gear_Solid_3_Snake_Eater.png" />
+    <Resource Include="images\videogames\Metroid_Prime.png" />
+    <Resource Include="images\videogames\Monkey_Island_2_LeChuck%27s_Revenge.png" />
+    <Resource Include="images\videogames\Paper_Mario_The_Thousand-Year_Door.png" />
+    <Resource Include="images\videogames\Planescape_Torment.png" />
+    <Resource Include="images\videogames\Portal_%282007%29.png" />
+    <Resource Include="images\videogames\Portal_2.png" />
+    <Resource Include="images\videogames\Red_Dead_Redemption.png" />
+    <Resource Include="images\videogames\Red_Dead_Redemption_II.png" />
+    <Resource Include="images\videogames\Resident_Evil_4.png" />
+    <Resource Include="images\videogames\Rock_Band_2.png" />
+    <Resource Include="images\videogames\Secret_of_Mana_%281993%29.png" />
+    <Resource Include="images\videogames\Shadow_of_the_Colossus_%282005%29.png" />
+    <Resource Include="images\videogames\Shin_Megami_Tensei_Persona_4.png" />
+    <Resource Include="images\videogames\Sid_Meier%27s_Alpha_Centauri.png" />
+    <Resource Include="images\videogames\Silent_Hill_2.png" />
+    <Resource Include="images\videogames\StarCraft.png" />
+    <Resource Include="images\videogames\StarCraft_Brood_War.png" />
+    <Resource Include="images\videogames\StarCraft_II_Wings_of_Liberty.png" />
+    <Resource Include="images\videogames\Star_Control_II.png" />
+    <Resource Include="images\videogames\Star_Wars_Knights_of_the_Old_Republic.png" />
+    <Resource Include="images\videogames\Star_Wars_TIE_Fighter.png" />
+    <Resource Include="images\videogames\Super_Mario_64.png" />
+    <Resource Include="images\videogames\Super_Mario_Bros._3.png" />
+    <Resource Include="images\videogames\Super_Mario_Galaxy.png" />
+    <Resource Include="images\videogames\Super_Mario_Galaxy_2.png" />
+    <Resource Include="images\videogames\Super_Mario_Odyssey.png" />
+    <Resource Include="images\videogames\Super_Mario_World.png" />
+    <Resource Include="images\videogames\Super_Metroid.png" />
+    <Resource Include="images\videogames\Super_Smash_Bros._Melee.png" />
+    <Resource Include="images\videogames\System_Shock_2.png" />
+    <Resource Include="images\videogames\The_Curse_of_Monkey_Island.png" />
+    <Resource Include="images\videogames\The_Elder_Scrolls_V_Skyrim.png" />
+    <Resource Include="images\videogames\The_Last_of_Us.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda_A_Link_Between_Worlds.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda_A_Link_to_the_Past.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda_Breath_of_the_Wild.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda_Link%27s_Awakening_%281993%29.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda_Majora%27s_Mask.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda_Ocarina_of_Time.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda_The_Wind_Waker.png" />
+    <Resource Include="images\videogames\The_Legend_of_Zelda_Twilight_Princess.png" />
+    <Resource Include="images\videogames\The_Secret_of_Monkey_Island.png" />
+    <Resource Include="images\videogames\The_Witcher_3_Wild_Hunt.png" />
+    <Resource Include="images\videogames\Uncharted_2_Among_Thieves.png" />
+    <Resource Include="images\videogames\Uncharted_3_Drake%27s_Deception.png" />
+    <Resource Include="images\videogames\Valkyria_Chronicles.png" />
+    <Resource Include="images\videogames\Warcraft_III_The_Frozen_Throne.png" />
+    <Resource Include="images\videogames\X-COM_UFO_Defense.png" />
+    <Resource Include="images\videogames\XCOM_Enemy_Unknown.png" />
+    <Resource Include="images\videogames\XCOM_Enemy_Within.png" />
+    <Resource Include="XAML_OVERVIEW.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameClubClassLibrary\GameClubClassLibrary.csproj">
+      <Project>{6B78EF2B-9EA4-443C-9634-A2AC8D519E66}</Project>
+      <Name>GameClubClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
