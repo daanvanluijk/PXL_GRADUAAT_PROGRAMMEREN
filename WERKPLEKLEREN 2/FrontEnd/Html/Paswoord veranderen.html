@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paswoord veranderen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Paswoord veranderen.css">
+    <script defer src="../Js/API.js"></script>
+    <script defer src="../Js/Paswoord veranderen.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+<div class="wachtwoord">
+    <form method="post">
+        <p>Kies een nieuw wachtwoord</p>
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" disabled>
+        <label for="paswoord">Wachtwoord: </label>
+        <input type="password" id="paswoord" name="paswoord" required>
+        <label for="paswoord2">Herhaal wachtwoord: </label>
+        <input type="password" id="paswoord2" name="paswoord" required>
+        <span id="message"></span>
+        <input type="button" value="Verstuur e-mail" onclick=sendEmail()>
+    </form>
+</div>
+</body>
+</html>

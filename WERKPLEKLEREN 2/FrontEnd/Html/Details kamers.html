@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Barlow:wght@100&family=Lora:wght@400;600&family=Sora:wght@500&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="../Images/B-icon.png" type="image/icon type">
+    <title>Boekers | Kamers</title>
+    <link rel="stylesheet" href="../Css/preloader.css">
+    <script defer src="../Js/loader.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Index.css">
+    <link rel="stylesheet" href="../Css/Navbar.css">
+    <link rel="stylesheet" href="../Css/Details kamers.css">
+    <script defer src="../Js/API.js"></script>
+    <script defer src="../Js/navbar.js"></script>
+    <script defer src="../Js/Login.js"></script>
+    <script defer src="../Js/Details kamers.js"></script>
+    <script defer src="../Js/Footer.js"></script>
+    <link rel="stylesheet" href="../Css/NavbarFix.css">
+
+</head>
+<body>
+<div id="preloader"></div>
+<div id="nav">
+
+</div>
+<div class="roomtop">
+    <h1 class="roomTitle">Naam kamer</h1>
+</div>
+<div class="details">
+    <div class="gallerij">
+        <div class="container">
+            <img id="expandedImg" src="" alt="bigimg">
+        </div>
+
+        <div class="row">
+            <!--<div class="column">
+                <img src="" alt="image kamer" class="thumbnail" onclick="expandImage(this);">
+            </div>
+            <div class="column">
+                <img src="" alt="image kamer" class="thumbnail" onclick="expandImage(this);">
+            </div>
+            <div class="column">
+                <img src="" alt="image kamer" class="thumbnail" onclick="expandImage(this);">
+            </div>
+            <div class="column">
+                <img src="" alt="image kamer" class="thumbnail" onclick="expandImage(this);">
+            </div>-->
+        </div>
+    </div>
+    <div class="search">
+        <div class="data">
+            <label for="myDate1" class="labelspace">Inchecken:</label>
+            <input type="date" id="myDate1">
+            <label for="myDate2" class="labelspace">Uitchecken:</label>
+            <input type="date" id="myDate2">
+
+        </div>
+        <div class="people">
+            <label for="adults" id="volw">Volwassenen</label>
+            <select name="adults" id="adults">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+            </select>
+            <label for="kids" id="kind">Kinderen</label>
+            <select name="kids" id="kids">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="icons">
+
+        </div>
+        <h2 id="prijs"></h2>
+        <div>
+            <button id="knop">Bereken Prijs</button>
+        </div>
+        <p class="infoKamer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aut deleniti deserunt
+            dignissimos
+            dolorum eaque earum est eveniet ex excepturi expedita facere facilis fuga hic ipsa iste iusto laborum magnam
+            molestias mollitia neque nihil quam, quidem quisquam recusandae saepe sequi similique sint sit soluta sunt
+            veniam
+            voluptatibus? Corporis, dolores.</p>
+        <div class="btnboeken">
+            <a href="#">
+                <button id="buttonBook" class="card-shoppingcart">Boeken</button>
+            </a>
+        </div>
+    </div>
+</div>
+<section id="footerID" class="footer">
+
+</section>
+</body>
+</html>

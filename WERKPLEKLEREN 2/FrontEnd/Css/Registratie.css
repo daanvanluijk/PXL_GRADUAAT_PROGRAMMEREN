@@ -1,0 +1,140 @@
+*{
+
+}body{
+    background: #4b4b4b;
+
+ }
+.registratie_container_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registratie_container{
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    display: flex;
+    width: 80%;
+    height: 650px;
+}
+#message,#message2{
+    color: red;
+    width: 80%;
+    font-size: 8px;
+}
+
+.registratie_container_links{
+    display: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 50%;
+    background: url("../Images/registratie_img.jpg");
+    background-size: cover;
+    box-shadow: 0 6px #1c1c1c;
+}
+.registratie_container_rechts{
+
+
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #272727;
+    box-shadow: 5px 5px #1c1c1c;
+}
+.registratie_form
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.registratie_form input{
+
+    border: none;
+    width: 80%;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    margin: 10px 0;
+    height: 30px;
+ }
+option{
+    color: black;
+}
+.registratie_form > select {
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    height: 30px;
+    width: 81%;
+    background: transparent;
+    margin: 10px 0;
+}
+input[type=button]{
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    color: black;
+}
+
+ .registratie_form label{
+    display: none;
+
+ }
+ .button_elements{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 80%;
+ }
+
+ .button_elements a{
+     border: none;
+     text-align: center;
+     align-items: center;
+     margin-top: 3px;
+     text-decoration: none;
+     background: transparent;
+     color: white;
+     border-bottom: 2px solid white;
+     width: 80%;
+     border-radius: 25px;
+     padding: 5px 3px;
+ }
+ .button_elements button:hover{
+     background: black;
+     color: white;
+
+ }
+#wrong_number{
+    color: red;
+}
+ @media screen and (min-width: 750px) {
+
+     .registratie_container_links{
+         display: flex;
+         border-top-left-radius: 50px;
+         border-bottom-left-radius: 50px;
+         width: 50%;
+     }
+     .registratie_container_rechts{
+         padding: 0;
+
+         border-top-right-radius: 50px;
+         border-bottom-right-radius: 50px;
+         border-top-left-radius: 0;
+         border-bottom-left-radius: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 50%;
+     }
+     #message,#message2{
+         font-size: 12px;
+     }
+
+ }

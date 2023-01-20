@@ -1,0 +1,180 @@
+.columns {
+    flex-direction: column;
+}
+
+.allInfo {
+    width: 70%;
+    margin-left: 13%;
+    margin-right: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.infotitel {
+    margin-right: 1rem;
+}
+
+.infoleft {
+    text-align: right;
+    margin: 0 1rem 0 0;
+}
+
+.inforight {
+    text-align: left;
+}
+
+.inforight p, .infoleft p {
+    margin-bottom: 1rem;
+}
+
+.btncenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnadres, #btnbetalen {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #3965CD;
+    padding: 5px;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    font-weight: bold;
+    width: 10rem;
+}
+
+#btnbetalen {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#btnadres:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#btnbetalen:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.allInfo {
+    justify-content: space-evenly;
+    margin-right: 5%;
+}
+
+.rooms {
+    width: initial;
+    margin: 0;
+}
+
+.payIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5rem 0 5rem;
+}
+
+.payIcon img {
+    display: flex;
+    width: 11%;
+    margin: 0 0.6rem 0.6rem 0.6rem;
+}
+
+.visa {
+    filter: invert(10%) sepia(63%) saturate(4109%) hue-rotate(236deg) brightness(90%) contrast(100%);
+}
+
+.credit {
+    filter: invert(83%) sepia(96%) saturate(2718%) hue-rotate(322deg) brightness(101%) contrast(92%);
+}
+
+.master {
+    filter: invert(9%) sepia(95%) saturate(6124%) hue-rotate(349deg) brightness(110%) contrast(106%);
+}
+
+.paypal {
+    filter: invert(46%) sepia(78%) saturate(458%) hue-rotate(168deg) brightness(84%) contrast(84%);
+}
+
+label {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 0.6rem;
+}
+
+.col-50 {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.checkout{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.room img {
+    width: 30%;
+    height: 20%;
+}
+#betalingVoltooid{
+    display: flex;
+    justify-content: center;
+    color: green;
+}
+.checkbox{
+    display: flex;
+    align-items: baseline;
+}
+.checkbox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#cbGegevensOpslaan{
+    text-align: center;
+    margin-right: 0.6rem;
+}
+
+#totalPrice{
+    margin-left: 0.4rem;
+}
+
+
+@media screen and (max-width: 480px){
+    .info{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,86 @@
+body{
+    background-color: #4b4b4b;
+}
+.code{
+    background-color: #272727;
+    color: white;
+    width: 70%;
+    height: 250px;
+    font-size: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 3%;
+    margin-top: 4%;
+}
+label{
+    font-size: 25pt;
+    text-align: center;
+}
+form{
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"]{
+    float: right;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    font-size: 20pt;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    text-align: center;
+}
+input[type="button"]{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 45px;
+    border: none;
+    background-color: #3965CD;
+    color: white;
+    padding: 3%;
+    font-size: 15pt;
+    margin-top: 10%;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+label{
+    margin-bottom: 5%;
+}
+#message{
+    color: red;
+    font-size: 12pt;
+    text-align: center;
+}
+/* DESKTOP */
+@media screen and (min-width: 480px){
+    .code{
+        font-size: 20pt;
+        margin-top: 2%;
+        width: 50%;
+        padding: 1%;
+        height: 350px;
+    }
+    input[type="text"]{
+        font-size: 20pt;
+        width: 40%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    input[type="button"]{
+        font-size: 20pt;
+        width: 40%;
+        padding: 1%;
+        margin-top: 5%;
+    }
+    label{
+        margin-top: 5%;
+        font-size: 25pt;
+    }
+
+}

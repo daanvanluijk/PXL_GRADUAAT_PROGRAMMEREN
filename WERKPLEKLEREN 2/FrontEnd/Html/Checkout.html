@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="../Images/B-icon.png" type="image/icon type">
+    <title>Boekers | Betalen</title>
+    <link rel="stylesheet" href="../Css/preloader.css">
+    <script defer src="../Js/loader.js"></script>
+    <link rel="stylesheet" href="../Css/Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../Js/API.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Barlow:wght@100&family=Lora:wght@400;600&family=Sora:wght@500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../Css/Bestelling overzicht.css">
+    <link rel="stylesheet" href="../Css/Navbar.css">
+    <script defer src="../Js/Bestelling overzicht.js"></script>
+    <script defer src="../Js/Checkout.js"></script>
+    <script defer src="../Js/navbar.js"></script>
+    <script defer src="../Js/Login.js"></script>
+    <script defer src="../Js/Footer.js"></script>
+    <link rel="stylesheet" href="../Css/checkout.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="../Css/NavbarFix.css">
+</head>
+<body>
+<!-- navbar -->
+<div id="preloader"></div>
+<div id="nav">
+
+</div>
+
+<!-- Main content -->
+<div class="allInfo">
+    <div class="data">
+        <h1>Factuur adres</h1>
+        <hr>
+        <h2>Adres</h2>
+        <div class="columns">
+            <div class="info">
+                <div class="infoleft">
+                    <p class="infotitel">Voornaam:</p>
+                    <p class="infotitel">Naam:</p>
+                    <p class="infotitel">E-mail:</p>
+                    <p class="infotitel">Land:</p>
+                    <p class="infotitel">Adres:</p>
+                    <p class="infotitel">Plaats:</p>
+                    <p class="infotitel">Postcode:</p>
+                    <p class="infotitel">Telefoon nr:</p>
+                </div>
+                <div class="inforight">
+                    <p id="voornaam">Jhon</p>
+                    <p id="achternaam">Doe</p>
+                    <p id="email">email@gmail.com</p>
+                    <p id="land">België</p>
+                    <p id="straat">Straatnaam, 69</p>
+                    <p id="gemeente">Genk</p>
+                    <p id="postcode">3600</p>
+                    <p id="tel">0401010195</p>
+                </div>
+            </div>
+            <div class="btncenter">
+                <button id="btnadres">Adres wijzigen</button>
+            </div>
+        </div>
+        <hr>
+        <h2>Totaal prijs</h2>
+        <div class="columns">
+            <div>
+                <p>1 Kamer(s)</p>
+                <p>6% BTW</p>
+                <b>Prijs:</b>
+                <b id="totalPrice"></b>
+            </div>
+            <div>
+                <p id="priceWoBtw"></p>
+                <p id="btw"></p>
+
+            </div>
+        </div>
+        <hr class="line">
+    </div>
+    <div class="data">
+        <div class="rooms">
+            <h1>Je reservatie</h1>
+            <hr>
+            <div class="room">
+                <img src="../Images/Boekers.png" alt="Boekers-logo">
+                <div>
+                    <p>Boekers Hotels Gent</p>
+                    <p>Olifantenstraat 69, 9000 Gent</p>
+                    <p id="room2"></p>
+                </div>
+            </div>
+            <hr class="line">
+        </div>
+
+        <div class="rooms">
+            <h1>Betaling</h1>
+            <hr>
+            <div class="payment">
+                <label for="naam">Wij accepteren</label>
+                <div class="payIcon">
+                    <img class="visa" src="../Images/icons/cc-visa-brands.svg" alt="Visa-Card">
+                    <img class="credit" src="../Images/icons/credit-card-solid.svg" alt="Credit-Card">
+                    <img class="master" src="../Images/icons/cc-mastercard-brands.svg" alt="Master-Card">
+                    <img class="paypal" src="../Images/icons/paypal-brands.svg" alt="Paypal">
+                </div>
+
+                <label for="naam">Naam op kaart</label>
+                <input type="text" id="naam" name="cardnaam" placeholder="John Doe">
+                <label for="kaartnum">Kaart Nummer</label>
+                <input type="text" id="kaartnum" name="cardnummer" placeholder="1111-2222-3333-4444">
+                <label for="expmaand">Verval Maand</label>
+                <input type="text" id="expmaand" name="expmaand" placeholder="December">
+
+                <div class="row">
+                    <div class="col-50">
+                        <label for="expjaar">Verval Jaar</label>
+                        <input type="text" id="expjaar" name="expjaar" placeholder="2026">
+                    </div>
+                    <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                </div>
+                <div class="checkout">
+                    <div class="checkbox">
+                        <input class="checkbox1" type="checkbox" id="cbGegevensOpslaan"/>
+                        <label class="labelckb" for="cbGegevensOpslaan">Kaart gegevens opslaan</label>
+                    </div>
+                    <button id="btnbetalen">Betalen</button>
+                    <Span id="betalingVoltooid"></Span>
+                </div>
+            </div>
+            <hr class="line">
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<section id="footerID" class="footer">
+
+</section>
+</body>
+</html>

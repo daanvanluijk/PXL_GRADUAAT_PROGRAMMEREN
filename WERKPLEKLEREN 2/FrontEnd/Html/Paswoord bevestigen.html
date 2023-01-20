@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../Css/Paswoord bevestigen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../Js/API.js"></script>
+    <script defer src="../Js/Paswoord bevestigen.js"></script>
+
+
+</head>
+<body>
+<div class="code">
+    <form method="post">
+        <label for="code">Geef je geheime code in</label>
+        <input type="text" id="code" name="code">
+        <span id="message"></span>
+        <input type="button" value="Bevestig" onclick=confirmPassword()>
+    </form>
+</div>
+</body>
+</html>

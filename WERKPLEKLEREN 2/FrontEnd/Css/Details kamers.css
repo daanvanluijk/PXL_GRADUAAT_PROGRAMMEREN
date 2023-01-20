@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navBar_mobile{
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 3%;
+}
+h2{
+    margin-bottom: 1%;
+}
+#knop{
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #3965CD;
+    padding: 5px;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+#knop:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.search{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.data{
+    display: flex;
+    margin-bottom: 3%;
+    flex-direction: column;
+    align-items: center;
+}
+.people{
+    margin-bottom: 3%;
+}
+#myDate1{
+    margin-right: 0;
+}
+
+.column {
+    width: 24%;
+    margin-right: 1%;
+}
+.gallerij{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#expandedImg{
+    width: 100%;
+    height: 200px;
+}
+.column img{
+    opacity: 0.8;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+}
+.column img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.infoKamer{
+    margin-top: 4%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.icon{
+    width: 20%;
+    text-align: center;
+    filter: invert(17%) sepia(3%) saturate(14%) hue-rotate(314deg) brightness(90%) contrast(101%);
+}
+.icon img{
+    height: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.btnboeken{
+    margin-top: 2rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.card-shoppingcart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #3965CD;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 1rem;
+}
+.card-shoppingcart:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+@media screen and (min-width: 480px){
+    .roomtop{
+        margin: 1.6rem 0 1.2rem 4rem;
+    }
+    .labelspace{
+        margin-right: 0.6rem;
+    }
+    .details{
+        display: flex;
+        margin-left: 4rem;
+        margin-right: auto;
+    }
+    .search{
+        width: 40%;
+        align-items: start;
+        justify-content: flex-start;
+        margin: 0 0 0 5rem
+    }
+    .roomTitle{
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 3%;
+    }
+    .gallerij{
+        width: 60%;
+        margin-left: 3%;
+    }
+    .container{
+
+    }
+    #expandedImg{
+        width: 100%;
+        height: 500px;
+    }
+    .row{
+        width: 100%;
+        margin-top: 1%;
+
+    }
+    .column img{
+        height: 130px;
+    }
+    .infoKamer{
+        margin: 1.2rem 0 0 0;
+        width: 80%;
+        text-align: left;
+    }
+    .icons{
+        width: 40%;
+    }
+    .data{
+        flex-direction: row;
+        align-items: initial;
+    }
+    #myDate1{
+        margin-right: 8%;
+    }
+}

@@ -1,0 +1,10 @@
+.profiel_pagina{
+    width: 50%;
+}
+.profiel_pagina p{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.delete_btn{
+    background: red;
+}

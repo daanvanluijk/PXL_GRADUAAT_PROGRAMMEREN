@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*Display none items */
+
+.desktop_navbar{
+    display: none;
+}
+#notfound{
+    color: red;
+}
+/*NavigatieBar Mobile*/
+.navBar_mobile{
+    padding: 10px;
+    justify-content: space-between;
+    background: #272727;;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+/*Ul list items */
+.list_items_mobile{
+    display: none;
+    width: 60%;
+    z-index: 2;
+    background: #272727;
+    opacity: 80%;
+    position: fixed;
+    margin-top: -2.1%;
+    flex-direction: column;
+    list-style: none;
+}
+/*List item = a link*/
+.list_item{
+    border-bottom: 2px solid black;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    background: #1f1f1f;
+    padding: 15px 0 8px 0;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+/*Alles LoginForm------------------------------*/
+/*Knop voor login form te laten zakken*/
+.list_item_login{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.mobile_login_form{
+    display: flex;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #272727;
+    opacity: 80%;
+}
+.mobile_login_form input{
+    width: 55%;
+    padding: 2px 8px;
+    height: 25px;
+    font-size: 18px;
+}
+.mobile_login_form label{
+    font-weight: bold;
+    font-size: 20px;
+}
+.login_links{
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.login_links a{
+    color: white;
+    text-decoration: none;
+}
+.row_images{
+    display: flex;
+    justify-content: center;
+}
+.row_images img{
+    width: 4.5%;
+    background: blue;
+    padding: 3px;
+}
+.mobile_login_form button{
+    width: 60%;
+    border-radius: 50px;
+    height: 30px;
+}
+/*Logo Bookers in navbar*/
+.navBar_mobile img, .img_logo {
+    width: 25%;
+}
+
+/*Hamburger Menu */
+.hamburger_box{
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.log_out_plus_cart{
+    display: flex;
+    flex-direction: row;
+}
+.list_item_shopping_cart{
+    display: flex;
+    flex-direction: row;
+    margin-right: -2rem;
+    margin-left: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+@media screen and (min-width: 650px)  {
+    .navBar_mobile{
+        display: none;
+    }
+
+    .list_items li:hover{
+        background: black;
+    }
+    .list_items_mobile{
+        display: none;
+    }
+    .desktop_navbar{
+        background: #272727;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+    }
+    .list_items{
+        margin: 0;
+       list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .list_item,.list_item_login{
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        padding: 1.7rem;
+        background: none;
+        color: white;
+    }
+    .list_item_login{
+        font-size: 24px;
+        /*margin: 0.2% 25px 0 0 ;*/
+    }
+    .list_item_login:hover{
+        background: blue;
+    }
+    .img_logo{
+        width: 10%;
+    }
+    /*Mobile gedeelte van de LoginForm------*/
+    .mobile_login_form{
+        display: none;
+        width: 30%;
+        position: absolute;
+        right: 0;
+    }
+    .mobile_login_form input
+    {
+
+    }
+    .log_out_plus_cart{
+        display: flex;
+        align-items: center;
+
+        margin-right: 1%;
+    }
+    .list_item_shopping_cart{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        font-size: 20pt;
+        background-color: #3965CD;
+        color: white;
+        height: 30px;
+        border-radius: 20px;
+        padding: 12px;
+        justify-content: space-between;
+
+    }
+    a{
+        text-decoration: none;
+
+    }
+    .log_out_plus_cart{
+        display: flex;
+        flex-direction: initial;
+    }
+    .list_item_shopping_cart{
+        display: flex;
+        flex-direction: initial;
+        margin-right: initial;
+        margin-left: initial;
+    }
+    .list_item_shopping_cart img{
+        height: 23px;
+        color: white;
+    }
+
+}

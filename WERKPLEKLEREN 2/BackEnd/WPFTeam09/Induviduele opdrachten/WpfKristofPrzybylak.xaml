@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFTeam09.Induviduele_opdrachten.WpfKristofPrzybylak"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTeam09.Induviduele_opdrachten"
+        mc:Ignorable="d"
+        Title="WpfKristofPrzybylak" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <WrapPanel Margin="10">
+                <Label Width="100" Margin="20 0">Voornaam</Label>
+                <TextBox Name="txbVoornaam" Width="120"></TextBox>
+            </WrapPanel>
+            <WrapPanel Margin="10">
+                <Label Width="100" Margin="20 0">Achternaam</Label>
+                <TextBox Name="txbAchternaam" Width="120"></TextBox>
+            </WrapPanel>
+            <Button Name="btnSelecttestSql" Click="btnSelecttestSql_Click">Test select statement sql server</Button>
+            <Button Name="btnInsert" Content="insert" Click="btnInsert_Click"></Button>
+            <DataGrid Name="dgStudents"></DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

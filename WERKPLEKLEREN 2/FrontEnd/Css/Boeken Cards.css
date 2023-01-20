@@ -1,0 +1,250 @@
+.contentbox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.btnTest{
+    opacity: 65%;
+    color: white;
+    background: black;
+    border: 1px solid black;
+    left: 0;
+    width: 25px;
+    position: fixed;
+    height: 150px;
+    margin-top: 210px;
+}
+
+.filterbox{
+    color: white;
+    display: none;
+    opacity: 75%;
+    left: 25px;
+    position: fixed;
+    margin-top: 100px;
+    font-size: 18px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    width: 250px;
+    height: 24rem;
+    padding: 3rem;
+    align-content: center;
+}
+
+#btnFilter{
+    width: 8rem;
+}
+
+.cardsContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.cardsColumns{
+
+}
+.productcard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 14rem;
+    overflow: hidden;
+    padding-bottom: 8rem;
+    border-bottom: solid darkgrey 1px;
+    width: 90%;
+    margin: 2rem 0 0 0;
+}
+
+.card-image-content{
+    width: 34%;
+}
+
+.card-content{
+    width: 50%;
+    margin-left: 3rem;
+}
+
+.card-price-content{
+    width: 25%;
+}
+
+.card-image{
+    width: 100%;
+    margin: 0.4rem 1rem 1rem 1rem;
+}
+
+.card-title{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.card-description{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    font-size: 16px;
+    font-family: Cambria, serif;
+    margin-top: 0.8rem;
+}
+
+.card-price{
+    color: crimson;
+    margin: 2.6rem 0 1.6rem 0;
+}
+
+.card-tag{
+    border: solid forestgreen 1px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    width: max-content;
+    color: forestgreen;
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
+
+.shoppingcartimg{
+    max-width: 14%;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.card-shoppingcart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:  #3965CD;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    height: 2.4rem;
+    width: 10rem;
+    margin-right: 1rem;
+}
+
+.facil_icon{
+    margin-top: 0.8rem;
+}
+
+.svg_icon{
+    width: 8%;
+    margin: 0 3px 0 3px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.card-shoppingcart:hover{
+    cursor: pointer;
+    background-color: #3965CD;
+}
+
+.red{
+    border: solid red 1px;
+    color: red;
+}
+
+@media screen and (max-width: 650px){
+
+    filter{
+        display: none;
+    }
+    .filterbox{
+        display: none;
+    }
+    #btnFilter{
+        display: none;
+    }
+    .cardsContainer{
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+    }
+    .list_items_mobile{
+        margin-top: 55px;
+    }
+    .productcard{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        width: 98%;
+        height: 10rem;
+        overflow: hidden;
+        padding-bottom: 8rem;
+        margin: 0.2rem 1rem 0 0.2rem;
+        border-bottom: solid darkgrey 1px;
+    }
+
+    .card-image-content{
+        width: 70%;
+        margin-right: 1rem;
+    }
+
+    .card-content{
+        width: 60%;
+        margin-left: 3rem;
+    }
+
+    .card-price-content{
+        width: 20%;
+    }
+    h2{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .card-image{
+        width: 120%;
+        margin: 1rem;
+    }
+
+    .card-title{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .card-description{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        font-size: 14px;
+        font-family: Cambria, serif;
+        margin-top: 0.8rem;
+    }
+
+    .card-price{
+        font-size: 18px;
+        color: crimson;
+        margin: 1.4rem 0 1.6rem 0;
+    }
+
+    .card-shoppingcart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #049dc6;
+        border: none;
+        border-radius: 20px;
+        height: 1.6rem;
+        width: 4.6rem;
+        margin-right: 1rem;
+    }
+}

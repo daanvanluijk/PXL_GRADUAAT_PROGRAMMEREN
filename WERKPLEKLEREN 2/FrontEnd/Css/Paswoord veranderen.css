@@ -1,0 +1,95 @@
+body{
+    background-color: #4b4b4b;
+}
+.wachtwoord{
+    background-color: #272727;
+    color: white;
+    width: 70%;
+    height: 500px;
+    font-size: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 3%;
+    margin-top: 10%;
+}
+form{
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wachtwoord p{
+    font-size: 25pt;
+}
+
+input[type="email"]{
+    float: right;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    font-size: 20pt;
+    margin-bottom: 5%;
+}
+input[type="password"]{
+    float: right;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    font-size: 20pt;
+    margin-bottom: 5%;
+}
+label{
+    margin-bottom: 5%;
+}
+input[type="button"]{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 45px;
+    border: none;
+    background-color: #3965CD;
+    color: white;
+    padding: 3%;
+    font-size: 15pt;
+    margin-top: 4%;
+}
+form p{
+    text-align: center;
+    font-size: 43pt;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+#message{
+    font-size: 12pt;
+    color: red;
+    text-align: center;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 480px){
+    .wachtwoord{
+        height: 650px;
+        font-size: 20pt;
+        margin-top: 2%;
+        width: 50%;
+        padding: 1%;
+    }
+    input[type="password"]{
+        font-size: 20pt;
+        width: 60%;
+    }
+    input[type="button"]{
+        font-size: 20pt;
+        width: 40%;
+        padding: 1%;
+
+    }
+    input[type="email"]{
+        width: 60%;
+        font-size: 20pt;
+    }
+
+}

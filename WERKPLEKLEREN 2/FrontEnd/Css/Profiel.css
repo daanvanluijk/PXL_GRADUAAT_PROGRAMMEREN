@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/test.jpg");
+}
+.welkom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15%;
+}
+h1 {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+.page_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav_card {
+    display: none;
+}
+.land{
+    text-align: center;
+    margin-left: 1.5rem;
+}
+.profielnav {
+    list-style: none;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 18px;
+}
+
+.profielnav a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 2rem;
+    color: #a3a3a3;
+    border-radius: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    font-size: 20px;
+}
+
+.inputfield {
+    font-size: 20px;
+    height: 2rem;
+    width: 16rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+
+.inputfield:focus {
+    border-color: dodgerblue;
+}
+button{
+    color: black;
+}
+.save {
+    height: 2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+}
+
+.save:focus{
+    transform: scale(90%);
+    transition: ease-in-out 0.3s;
+}
+
+.save:after{
+    transform: scale(100%);
+    transition: ease-in-out 0.3s;
+}
+
+option{
+   color: black;
+}
+
+input{
+    margin-bottom: 2rem;
+}
+
+select{
+    margin-bottom: 2rem;
+    border: none;
+    color: white;
+    height: 30px;
+    font-size: 18px;
+    width: 85%;
+    background: transparent;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/test.jpg");
+
+    }
+    .welkom{
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 68px;
+    }
+    label {
+        align-items: flex-start;
+    }
+    .page_container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .profielnav:hover {
+        cursor: pointer;
+        transform: scale(110%);
+        transition: ease-in-out 0.3s;
+    }
+    .nav_card {
+        display: flex;
+        align-items: center;
+        width: 20rem;
+        height: 26rem;
+        margin-right: 5rem;
+        border-right: solid darkgrey 2px;
+    }
+    form {
+        margin-top: 0;
+        padding: 4rem 5rem 4rem 5rem;
+        color: #a3a3a3;
+        border-radius: 20px;
+    }
+    .inputfield{
+        text-align: initial;
+    }
+    .land{
+        text-align: initial;
+        margin-left: 0;
+    }
+    .
+}

@@ -1,0 +1,51 @@
+﻿<Window x:Class="WPFTeam09.Delete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTeam09"
+        mc:Ignorable="d"
+        Title="User | Kamer Verwijderen" Height="720" Width="1280" WindowStartupLocation="CenterScreen">
+    <DockPanel Background="#FF333333">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Menu">
+                <MenuItem Name="btnKamerToevoegen" Header="Kamer Toevoegen" Click="btnKamerToevoegen_Click"></MenuItem>
+                <MenuItem Name="btnBack" Header="Terug" Click="btnBack_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <StackPanel></StackPanel>
+        <StatusBar DockPanel.Dock="Bottom">
+            <WrapPanel >
+                <Label>Admin</Label>
+                <Label Name="lblAdmin" Margin="5 0"></Label>
+            </WrapPanel>
+            <Label Width="850"></Label>
+            <Label Name="lblTime">Tijd</Label>
+            <Button  Name="btnAfmelden" Click="btnAfmelden_Click" >Afmelden</Button>
+        </StatusBar>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.6*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+                <RowDefinition Height="0.6*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="lblTableName" FontSize="26" Grid.Column="1" HorizontalAlignment="Left" Foreground="White" Margin="10,17,0,10" Width="185" Content="Users"/>
+            <TextBox Height="30" x:Name="txbSearch" Grid.Column="1" Margin="400,15,400,15" Grid.ColumnSpan="2"></TextBox>
+            <Button x:Name="btnSearch" Grid.Column="2" Margin="220,15,300,15" Height="30" Width="70" Click="btnSearch_Click" IsDefault="True">Zoeken</Button>
+            <DataGrid x:Name="dgMain" Margin="10 15" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
+            <DataGrid x:Name="dgRooms" Margin="10 15" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Visibility="Collapsed"></DataGrid>
+            <Button Margin="525,0,525,25" Grid.Column="1" Grid.Row="2" Width="150" Height="50" x:Name="btnDeleteUser" Click="btnDeleteUser_Click" Grid.ColumnSpan="2" Content="Verwijder"></Button>
+            <Button Margin="15,0,485,25" Grid.Row="2" Width="100" Height="50" x:Name="btnUserTable" Click="btnUserTable_Click" Grid.Column="1" Content="Gebruikers"></Button>
+            <Button Margin="135,0,365,25" Grid.Row="2" Width="100" Height="50" x:Name="btnRoomTable" Click="btnRoomTable_Click" Grid.Column="1" Content="Kamers"></Button>
+            <Button Margin="250,0,250,25" Grid.Row="2" Width="100" Height="50" x:Name="btnOrdersTable" Click="btnOrdersTable_Click" Grid.Column="1" Content="Orders"></Button>
+            
+        </Grid>
+    </DockPanel>
+</Window>
